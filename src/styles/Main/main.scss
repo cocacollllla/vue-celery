@@ -1,0 +1,24 @@
+@import '@/styles/mixin';
+
+.mainWrapper {
+  background: url('../../assets/mainImage.jpg') no-repeat 50% 50%;
+  height: 100vh
+}
+
+@include desktop {
+
+}
+
+@include mobile {
+  .zz{
+    background:#fa0;
+  }
+}
+
+@include tablet {
+  .zz{
+    background: green;
+  }
+}
+
+
