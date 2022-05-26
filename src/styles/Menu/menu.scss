@@ -1,0 +1,92 @@
+@import '@/styles/mixin';
+
+.wrap {
+  padding-bottom: 200px;
+}
+
+
+.menuWrap {
+  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.salad {
+  padding: 50px 0;
+
+  .saladImage {
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    text-align: center;
+    color: #666
+  }
+  
+  
+  .saladTitle {
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+@include desktop {
+  .menuWrap {
+    max-width: 1300px;
+
+    .saladImage {
+      width: 350px;
+    }
+
+    .saladTitle {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@include tablet {
+  .menuWrap {
+    width: auto;
+
+    .saladImage {
+      width: 300px;
+    }
+
+    .saladTitle {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@include mobile {
+  .menuWrap {
+    width: auto;
+
+    .salad {
+      padding: 50px 10px;
+    }
+
+    .saladImage {
+      width: 70%;
+    }
+
+    .saladTitle {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      word-break: keep-all;
+    }
+  }
+}
