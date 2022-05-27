@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { MENULIST } from '@/data/data';
+import { MENULIST } from '@/data/menuList';
 
 export default {
   name: 'title-component',
@@ -27,7 +27,7 @@ export default {
 
 <style>
 .title {
-  padding: 150px 0 50px 0;
+  padding: 150px 0 150px 0;
   text-align: center;
   font-size: 2rem;
   font-weight: 500;

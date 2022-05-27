@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { MENULIST } from '@/data/data';
+import { MENULIST } from '@/data/menuList';
 import Nav from '@/pages/Header/Nav.vue';
 import '@/styles/Header/header.scss';
 
