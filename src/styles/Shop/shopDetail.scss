@@ -1,0 +1,176 @@
+@import '@/styles/mixin';
+
+
+@include desktop {
+  .wrap {
+    padding-bottom: 200px;
+
+    .mapContentWrap {
+      max-width: 1300px;
+      padding: 0 20px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .mapBox {
+        width: 70%;
+        height: 500px;
+        margin-right: 15px;
+      }
+
+      .shopDetailBox {
+        width: 30%;
+        border: 1px solid #ddd;
+
+        .detailImage {
+          height: 250px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+          }
+        }
+
+        .detailInfo {
+          padding: 20px;
+          min-height: 250px;
+          display: flex;
+          flex-direction: column;
+
+          .detailName {
+            font-size: 1.3rem;
+          }
+          .detailAddr {
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: #666;
+          }
+          .detailCall {
+            margin-top: auto;
+            font-size: 1.1rem;
+
+            .fa-phone {
+              color: $mainColor;
+              font-size: 0.9rem;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include tablet {
+
+    .mapContentWrap {
+      width: 100%;
+      padding: 0 20px;
+
+      .mapBox {
+        width: 100%;
+        height: 500px;
+      }
+
+      .shopDetailBox {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        display: flex;
+        margin-top: 30px;
+
+        .detailImage {
+          width: 40%;
+          margin-right: 30px;
+          img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+
+          }
+        }
+
+        .detailInfo {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+
+          .detailName {
+            font-size: 1.4rem;
+          }
+          .detailAddr {
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: #666;
+          }
+          .detailCall {
+            margin-top: auto;
+            font-size: 1.2rem;
+
+            .fa-phone {
+              color: $mainColor;
+              font-size: 0.9rem;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .mapContentWrap {
+      width: 100%;
+      padding: 0 20px;
+
+      .mapBox {
+        width: 100%;
+        height: 500px;
+      }
+
+      .shopDetailBox {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        margin-top: 30px;
+
+        .detailImage {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+
+          }
+        }
+
+        .detailInfo {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+
+          .detailName {
+            font-size: 1.2rem;
+          }
+          .detailAddr {
+            margin: 20px 0;
+            font-size: 1rem;
+            color: #666;
+          }
+          .detailCall {
+            margin-top: auto;
+            font-size: 1.1rem;
+
+            .fa-phone {
+              color: $mainColor;
+              font-size: 0.9rem;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }

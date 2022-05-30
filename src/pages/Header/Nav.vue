@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li :class="{ menuOn : lower === value}" @click="goToMenu(value)" v-for="(value, menu) in menuList" :key="value">{{menu}}</li>
+    <li :class="{ menuOn : menu2 === value}" @click="goToMenu(value)" v-for="(value, menu) in menuList" :key="value">{{menu}}</li>
   </ul>
 </template>
 
@@ -12,7 +12,7 @@ export default {
   },
   data(){
     return {
-      lower : ''
+      menu2 : ''
     }
   },
   methods: {
@@ -24,8 +24,7 @@ export default {
   watch : {
     $route (a) {
       if(a.name !== undefined) {
-        this.lower = a.name.toLowerCase();
-        console.log(this.lower)
+        this.menu2 = this.$route.path.split('/')[1]
       }
     }
   },

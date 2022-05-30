@@ -1,0 +1,164 @@
+@import '@/styles/mixin';
+
+.wrap {
+  padding-bottom: 200px;
+
+  form {
+    padding: 0 20px;
+    margin: 0 auto;
+
+    .inputForm {
+      display: flex;
+      padding: 20px 0;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+
+      &:first-of-type {
+        border-top: 1px solid #ccc;
+      }
+
+      .inputTitle {
+        padding-left: 20px;
+      }
+
+      .inputBox {
+        .addrBtn {
+          width: 80px;
+          border: 0;
+          border-radius: 5px;
+        }
+
+        input {
+          width: 100%;
+          padding: 8px 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+    }
+
+
+    .uploadBtn {
+      display: block;
+      padding: 10px 30px;
+      margin: 50px auto;
+      border: 0;
+      border-radius: 10px;
+      background-color: $mainColor;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@include desktop {
+ 
+    form {
+      width:  1300px;
+
+      .inputForm {
+
+        .inputTitle {
+          min-width: 170px;
+        }
+
+        .inputBox {
+          width: 400px;
+        }
+      }
+      
+      .addressForm {
+
+        .inputBox {
+          display: flex;
+          width: 100%;
+
+          input {
+            margin-right: 10px;
+            
+          }
+
+        }
+      }
+
+
+    }
+  }
+
+
+@include tablet {
+ 
+    form {
+      width:  100%;
+
+      .inputForm {
+
+        .inputTitle {
+          width: 170px;
+        }
+
+        .inputBox {
+          width: 400px;
+          padding-right: 10px;
+        }
+      }
+      
+      .addressForm {
+
+        .inputBox {
+
+          input {
+            margin-bottom: 10px;
+            
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
+
+        }
+      }
+
+    }
+  }
+
+
+
+@include mobile {
+
+    form {
+      width:  100%;
+
+      .inputForm {
+
+        .inputTitle {
+          width: 22%;
+          min-width: 120px;
+          font-size: 1rem;
+        }
+
+        .inputBox {
+          width: 100%;
+          padding-right: 10px;
+        }
+      }
+      
+      .addressForm {
+
+        .inputBox {
+
+          input {
+            margin-bottom: 10px;
+            
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
+        }
+      }
+
+
+    }
+  }

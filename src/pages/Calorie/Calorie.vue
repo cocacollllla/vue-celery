@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <Title :title="$route.name" />
+    <Title :title="$route.path" />
     <div class="calorieWrap">
       <div class="contentWrap">
 
@@ -109,7 +109,5 @@ export default {
       this.sortSelected[del.cate].list = delList;
     }
   },
-
-
 }
 </script>

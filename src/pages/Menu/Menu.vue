@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <Title :title="$route.name" />
+    <Title :title="$route.path" />
     <div class="menuWrap">
       <div class="salad" v-for="menu in salad" :key="menu.id">
         <div class="saladImage"><img :src="menu.attatchmentUrl" /></div>

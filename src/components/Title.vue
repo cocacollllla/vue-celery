@@ -19,7 +19,7 @@ export default {
     }
   },
   mounted(){
-    const changeMenu = this.title.toLowerCase();
+    const changeMenu = this.title.split('/')[1];
     this.menu2 = Object.keys(this.menuList).find(key => this.menuList[key] === changeMenu);
   }
 }

@@ -1,0 +1,149 @@
+@import '@/styles/mixin';
+
+.wrap {
+  padding-bottom: 200px;
+
+  .shopWrap {
+    margin: 0 auto; 
+
+    .noData {
+      margin-top: 100px;
+      text-align: center;
+    }
+  }
+
+  .titleText {
+    text-align: center; 
+
+    div {
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    p {
+      color: #888
+    }
+  }
+
+  .searchSelect {
+    margin: 50px 0;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px;
+      padding: 0 20px;
+      margin: 0 auto 30px auto;
+
+      select {
+        display: block;
+        width: 50%;
+        padding: 15px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        background-color: white;
+
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      padding: 12px 30px;
+      margin: 0 auto;
+      border: 0;
+      border-radius: 10px;
+      background-color: $mainColor;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  .writeBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+    button {
+      padding: 10px 25px;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+@include desktop {
+  .wrap {
+    .shopWrap {
+      max-width: 1200px;
+    }
+  
+    .titleText {
+      div {
+        font-size: 1.4rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .searchSelect {
+      button {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .wrap {
+    .shopWrap {
+      width: 100%;
+    }
+  
+    .titleText {
+      div {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .searchSelect {
+      button {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .wrap {
+    .shopWrap {
+      width: 100%;
+    }
+  
+    .titleText {
+      div {
+        font-size: 1.1rem;
+      }
+  
+      p {
+        padding: 0 10px;
+        font-size: 1rem;
+      }
+    }
+  
+    .searchSelect {
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+}
