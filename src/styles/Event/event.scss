@@ -1,0 +1,220 @@
+@import '@/styles/mixin';
+
+.wrap {
+  padding-bottom: 200px;
+
+  .eventWrap {
+
+    .eventBtn {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+
+      div {
+        color: #999;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:last-child {
+          margin-left: 30px;
+        }
+      }
+
+      .btnOn {
+        border-bottom: 4px solid $mainColor;
+        color: #333;
+      }
+
+      .writeBtn {
+        margin-right: auto;
+      }
+
+    }
+
+    .eventList {
+      padding: 20px;
+
+      .event {
+        min-height: 270px;
+        margin-bottom: 20px;
+        border: 1px solid #aaa;
+        position: relative;
+        cursor: pointer;
+
+        .eventImg {
+          width: auto;
+          max-width: 195px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .eventInfo {
+          padding: 20px 0;
+
+          .eventTitle {
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+
+          .eventTime {
+            span:first-of-type {
+              margin: 0 10px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .eventState {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          border-bottom: 50px solid transparent;
+          border-top: 50px solid #333;
+          border-left: 50px solid transparent;
+          border-right: 50px solid #333;
+
+          span {
+            display: block;
+            width: 50px;
+            position: relative;
+            top: -24px;
+            color: white;
+            text-align: center;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+
+    .eventWrap {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .eventBtn {
+        div {
+          font-size: 1.2rem;
+        }
+      }
+
+      .eventList {
+        .event {
+          display: flex;
+          align-items: center;
+          padding: 0 100px;
+
+          .eventImg {
+            margin-right: 100px;
+            display: flex;
+            align-items: center;
+          }
+
+          .eventInfo {
+            .eventTitle {
+              font-size: 1.4rem;
+            }
+
+            .eventTime {
+              span:first-of-type {
+                margin: 0 10px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+@include tablet {
+
+  .eventWrap {
+    width: 100%;
+
+    .eventBtn {
+      div {
+        font-size: 1.1rem;
+      }
+    }
+
+    .eventList {
+      .event {
+        display: flex;
+        align-items: center;
+        padding: 0 70px;
+
+        .eventImg {
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+        }
+
+        .eventInfo {
+          margin-left: 50px;
+
+          .eventTitle {
+            font-size: 1.4rem;
+          }
+
+          .eventTime {
+            span:first-of-type {
+              margin: 0 10px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@include mobile {
+
+  .eventWrap {
+    width: 100%;
+
+    .eventBtn {
+      div {
+        font-size: 1.1rem;
+      }
+    }
+
+    .eventList {
+      .event {
+        .eventImg {
+          height: 100%;
+          margin: 0 auto;
+        }
+
+        .eventInfo {
+          text-align: center;
+
+          .eventTitle {
+            font-size: 1.2rem;
+          }
+
+          .eventTime {
+            span:first-of-type {
+              margin: 0 10px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

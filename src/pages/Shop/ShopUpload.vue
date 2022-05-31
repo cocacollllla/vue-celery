@@ -118,7 +118,6 @@ export default {
         if(cNumber.startsWith('02')){
           if(cNumber.length < 10) {
             res = cNumber.slice(0, 2) + '-' + cNumber.slice(2, 5) + '-' + cNumber.slice(5);
-            console.log('1')
           } else {
             res = cNumber.slice(0, 2) + '-' + cNumber.slice(2, 6) + '-' + cNumber.slice(6); 
           }

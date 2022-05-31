@@ -2,7 +2,7 @@
   <div class="headerWrap">
     <div class="header">
       
-      <div class="logo">CELERY</div>
+      <div class="logo" @click="$router.push('/')">CELERY</div>
       <div class="menu">
         <Nav :menuList="menuList" />
       </div>
