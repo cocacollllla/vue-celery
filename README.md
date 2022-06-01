@@ -3,11 +3,11 @@
 
 ## 배포주소
 
-[https://fastidious-kashata-945a70.netlify.app/](https://fastidious-kashata-945a70.netlify.app/)
+[hhttps://majestic-lily-96f726.netlify.app/](https://majestic-lily-96f726.netlify.app/)
 
 ## 영상링크
 
-[![영상 링크](https://img.youtube.com/vi/n8oG_LgtOIU/0.jpg)](https://youtu.be/n8oG_LgtOIU?t=0s) 
+[![영상 링크](https://img.youtube.com/vi/EZrp49pL6RQ/0.jpg)](https://youtu.be/EZrp49pL6RQ?t=0s) 
 
 ### 개발 인원 및 기간
 
